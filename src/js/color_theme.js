@@ -11,7 +11,9 @@ const svgSun = document.querySelector('.svg__sun');
 const svgMoon = document.querySelector('.svg__moon');
 
 //console.log(svgLupa);
-function colorTheme(){
+function colorTheme(themeKey){
+    
+    localStorage.setItem("themeKey", themeKey);
     body.classList.toggle('light__theme');
     body.classList.toggle('dark__theme');//body
 
@@ -38,5 +40,14 @@ function colorTheme(){
 
     // svgMoon.classList.toggle('svg__moon__light__theme');
     // svgMoon.classList.toggle('svg__moon__dark__theme');
+    
+    console.log(themeKey);
+    if(themeKey){
+        themeKey=false;
+    }else{
+        themeKey=true;
+    }
+
+    localStorage.setItem("themeKey", a);
 
 }

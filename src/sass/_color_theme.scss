@@ -1,0 +1,188 @@
+/*//////////////////////styles for my project/////////////////////////////*/
+body{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding: 30px;
+}
+/*////////////////////////// PLASE STYLE MAIN/////////////////////////////////*/
+.my__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/*///input/////*/
+.input__plase{
+  position: relative;
+}
+.input__plase input{
+  width: 213px;
+  height: 31px;
+  border-radius: 20px;
+  padding-left: 40px;
+}
+.input__plase div{
+  position: absolute;
+  top:7px;
+  left: 12px;
+}
+.search__size{
+  padding-left: 32px;
+  border-radius: 20px;
+}
+
+
+
+/*////////////////////////НУЖНО ДОБАВИТЬ В ОБЩИЙ/////////////////////////////*/
+/*/////////////////////////////////////////////////////////////////////*/
+:root{
+  --transition: all 2s;
+}
+/* 
+transition:var(--transition);
+ */
+body{
+  transition:var(--transition);
+}
+/*////////////////////////// PLASE STYLE /////////////////////////////////*/
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  box-sizing: border-box;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4B48DB;/*фон*/
+  border: .6px solid #FFFFFF;
+  
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  right: 1px;
+  bottom: 1px;
+  border-radius: 20px;
+  background-color: #ffffff;/*кружочек*/
+  transition: all 1s;
+}
+
+input:checked + .slider {
+  background-color: #FFFFFF;
+  border: .6px solid #4B48DB;
+  transition: all 1s;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 10px #4B48DB;/*дымка вокруг овала*/
+}
+
+input:checked + .slider::before {
+  background-color: #4B48DB;
+  transform: translateX(-20px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+.toggle__box{
+  border: solid 1px red;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle__box__large{
+    width: 148px;
+    height: 24px;
+}
+.toggle__box__small{
+    width: 98px;
+    height: 21px;
+}
+
+/*////////////////////////CHANGE COLOR THEME///////////////////////////////////*/
+.light__theme{
+  background-color:#F4F4F4;
+  color:#111321;
+}
+.dark__theme{
+  background-color: #2E2E2E;
+  color:#F4F4F4;
+}
+.svg__light__theme{
+  fill: #4B48DB;
+  transition:var(--transition);
+}
+.svg__dark__theme{
+  fill: #5F6775;
+  transition:var(--transition);
+}
+.input__light__theme{
+  background-color: transparent;
+  border: 1px solid #111321;
+  transition:var(--transition);
+}
+.input__dark__theme{
+  background-color: transparent;
+  border: 1px solid #f4f4f4;
+  transition:var(--transition);
+}
+.lupa__light__theme{
+  stroke: #111321;
+  fill: #111321;
+  transition:var(--transition);
+}
+.lupa__dark__theme{
+  stroke: #f4f4f4;
+  fill: #f4f4f4;
+  transition:var(--transition);
+}
+// .svg__sun__ligtn__theme{
+//   stroke: #4B48DB;
+//   fill: none;
+//   transition:var(--transition);
+// }
+// .svg__sun__dark__theme{
+//   stroke: #5F6775;
+//   fill:none;
+//   transition:var(--transition);
+// }
+// .svg__moon__ligtn__theme{
+//   stroke: #4B48DB;
+//   fill: none;
+//   transition:var(--transition);
+// }
+// .svg__moon__dark__theme{
+//   stroke: #5F6775;
+//   fill:none;
+//   transition:var(--transition);
+// }
+
+
+// .r::placeholder{
+//   color: red;
+// }
+/*//////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////*/

@@ -38,7 +38,7 @@ body{
 /*////////////////////////НУЖНО ДОБАВИТЬ В ОБЩИЙ/////////////////////////////*/
 /*/////////////////////////////////////////////////////////////////////*/
 :root{
-  --transition: all 2s;
+  --transition: all 1s;
 }
 /* 
 transition:var(--transition);
@@ -126,12 +126,24 @@ input:checked + .slider::before {
   background-color: #2E2E2E;
   color:#F4F4F4;
 }
-.svg__light__theme{
+.toggle__light__theme{
+  stroke: #4B48DB;
   fill: #4B48DB;
   transition:var(--transition);
 }
-.svg__dark__theme{
+.toggle__dark__theme{
+  stroke: #5F6775;
   fill: #5F6775;
+  transition:var(--transition);
+}
+.toggle__sun__theme{
+  stroke: #4B48DB;
+  fill: none;
+  transition:var(--transition);
+}
+.toggle__moon__theme{
+  stroke: #5F6775;
+  fill: none;
   transition:var(--transition);
 }
 .input__light__theme{
@@ -144,36 +156,19 @@ input:checked + .slider::before {
   border: 1px solid #f4f4f4;
   transition:var(--transition);
 }
-.lupa__light__theme{
+///////////
+.svg__light__theme{
   stroke: #111321;
   fill: #111321;
   transition:var(--transition);
 }
-.lupa__dark__theme{
+.svg__dark__theme{
   stroke: #f4f4f4;
   fill: #f4f4f4;
   transition:var(--transition);
 }
-// .svg__sun__ligtn__theme{
-//   stroke: #4B48DB;
-//   fill: none;
-//   transition:var(--transition);
-// }
-// .svg__sun__dark__theme{
-//   stroke: #5F6775;
-//   fill:none;
-//   transition:var(--transition);
-// }
-// .svg__moon__ligtn__theme{
-//   stroke: #4B48DB;
-//   fill: none;
-//   transition:var(--transition);
-// }
-// .svg__moon__dark__theme{
-//   stroke: #5F6775;
-//   fill:none;
-//   transition:var(--transition);
-// }
+////
+
 
 
 // .r::placeholder{
